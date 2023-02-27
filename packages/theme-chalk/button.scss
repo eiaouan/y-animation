@@ -1,0 +1,36 @@
+@import './src/mixins/var.scss';
+
+.y_button{
+    outline: none;
+    border-radius: 5%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    &--primary{
+        background-color: $color--primary;
+    }
+    &--success {
+        background-color: $color-success;
+    }
+    &--danger{
+        background-color: $color-danger;
+    }
+    &--text {
+        background-color: #707070;
+    }
+    &--meduim {
+        padding: 8px 10px;
+    }
+    &--big {
+        padding: 10px 12px;
+    }
+    &--small {
+        padding: 6px 8px;
+    }
+    &--mini {
+        padding: 5px;
+    }
+    &--loading{
+        opacity: 0.5;
+    }
+}
