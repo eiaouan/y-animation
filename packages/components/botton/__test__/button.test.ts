@@ -1,6 +1,5 @@
-import yButton from "..";
+import yButton from '..'
 import { mount } from '@vue/test-utils'
-
 
 test('displays message', () => {
   const wrapper = mount(yButton, {
@@ -8,8 +7,8 @@ test('displays message', () => {
       default: 'Hello world'
     },
     props: {
-        type: 'primary',
-        size: 'small'
+      type: 'primary',
+      size: 'small'
     }
   })
 

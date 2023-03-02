@@ -1,5 +1,6 @@
-import _Button from "./src/button.vue";
-import withInstall from "../../utils/install";
+import _Button from './src/y-button.vue'
+import {withInstall} from '@y-animation/utils'
 
-export const yButton = withInstall(_Button);
-export default yButton;
+
+export const yButton = withInstall(_Button)
+export default yButton

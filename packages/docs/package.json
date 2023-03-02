@@ -1,15 +1,22 @@
 {
-  "name": "docs",
+  "name": "@y-animation/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-    
+    "docs:build": "vite && vuepress build docs"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vuepress/client": "2.0.0-beta.60",
+    "@vuepress/plugin-register-components": "2.0.0-beta.61",
+    "@y-animation/components": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "markdown-it": "^13.0.1"
+  }
 }

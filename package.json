@@ -7,13 +7,20 @@
     "test": "jest",
     "dev": "vite&&pnpm -C example dev",
     "docs:dev": "pnpm -C packages/docs docs:dev",
-    "docs:build": "pnpm -C packages/docs docs:build"
+    "docs:build": "pnpm -C packages/docs docs:build",
+    "prepare": "husky install",
+    "lint": "npx eslint packages",
+    "lint:fix": "npx eslint packages --fix",
+    "lint:create": "npx eslint --init",
+    "components:build": "pnpm -C packages/components build",
+    "build": "rollup -c"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.0",
+    "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-typescript": "^7.21.0",
     "@commitlint/cli": "^17.4.4",
@@ -26,6 +33,8 @@
     "@vue/test-utils": "^2.3.0",
     "@vue/vue3-jest": "^29.2.2",
     "babel-jest": "^29.4.3",
+    "esbuild": "^0.17.10",
+    "esbuild-plugin-vue": "^0.2.4",
     "eslint": "^8.35.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
     "eslint-plugin-import": "^2.25.2",
@@ -35,10 +44,14 @@
     "husky": "^8.0.3",
     "jest": "^29.4.3",
     "jest-environment-jsdom": "^29.4.3",
+    "rollup": "^3.18.0",
+    "rollup-plugin-esbuild": "^5.0.0",
     "sass": "^1.58.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5",
-    "vite": "^4.1.1"
+    "vite": "^4.1.1",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-eslint-parser": "^9.1.0"
   },
   "dependencies": {
     "@vuepress/client": "2.0.0-beta.60",

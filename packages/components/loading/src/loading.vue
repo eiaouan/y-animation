@@ -1,18 +1,36 @@
 <template>
-    <div class="y_loading" :class="classList"></div>
+  <div
+    class="y_loading"
+    :class="classList"
+  />
 </template>
 
-<script lang="ts" setup>
-export type LoadingProps ={
-    type: String
-}
-import { defineProps,computed} from 'vue';
-const {type='primary'} = defineProps<LoadingProps>()
-let classList = computed(()=>{
-    return {
-        [`y_loading--${type}`]:type
+<script lang="ts">
+
+import { defineComponent,computed} from 'vue';
+import { LoadingProps } from './types';
+
+export default defineComponent({
+  props: {
+    type: {
+      type: String,
+      default: 'primary'
     }
-})
+  },
+  setup(props) {
+    // eslint-disable-next-line vue/no-setup-props-destructure
+    const {type='primary'} = props
+    let classList = computed(()=>{
+      return {
+          [`y_loading--${type}`]:type
+    }
+  })
+  return {
+    classList
+  }
+  }
+}) 
+
 </script>
 
 <style lang="scss">
