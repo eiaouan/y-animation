@@ -14,6 +14,7 @@ export default {
   title: 'YAnimation',
   description: 'YAnimation组件库',
   port: 5178,
+  base: process.env.NODE_ENV == 'production'? 'y-animation':'/',
   theme: defaultTheme({
     navbar: [
       // NavbarItem
