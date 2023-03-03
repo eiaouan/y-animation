@@ -40,3 +40,14 @@ jobs:
       - name: Running Lint
         # 通过前面章节定义的命令行执行代码扫描
         run: yarn lint
+
+        # 部署vuepress
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.PROJECT_ACCESS_TOKEN }}
+          TARGET_REPO: eiaouan/y-animation
+          TARGET_BRANCH: master
+          BUILD_SCRIPT: pnpm build:docs
+          BUILD_DIR: /packages/docs/docs/.vuepress/dist
+          # CNAME: https://www.xxx.com
