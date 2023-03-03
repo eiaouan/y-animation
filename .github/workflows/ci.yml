@@ -48,6 +48,6 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.PROJECT_ACCESS_TOKEN }}
           TARGET_REPO: eiaouan/y-animation
           TARGET_BRANCH: master
-          BUILD_SCRIPT: pnpm run build:docs
+          BUILD_SCRIPT: yarn && yarn docs:build
           BUILD_DIR: /packages/docs/docs/.vuepress/dist
           # CNAME: https://www.xxx.com
