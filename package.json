@@ -15,7 +15,7 @@
     "build:components": "pnpm -C packages/components build",
     "build:theme": "pnpm -C packages/theme-chalk build",
     "build:docs": "pnpm -C packages/docs docs:build",
-    "build": "rollup -c"
+    "build": "pnpm build:docs &&  pnpm build:theme && pnpm build:components"
   },
   "keywords": [],
   "author": "",
