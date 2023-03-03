@@ -1,11 +1,11 @@
-import { defineConfig,ConfigEnv ,UserConfig, loadEnv,} from 'vite'
+import { ConfigEnv ,UserConfig, loadEnv,} from 'vite'
 import path from 'path'
 
 const pathResolve = (value: string)=>{
     return path.resolve(__dirname,value)
 }
 
-export default ({ mode, command }: ConfigEnv): UserConfig => {
+export default ({ mode, }: ConfigEnv): UserConfig => {
     const env = loadEnv(mode, pathResolve('env/components/'))
     return {
       root: pathResolve('packages/components'),//1. 修改入口，默认是项目根目录下的index.html

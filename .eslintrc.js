@@ -80,11 +80,15 @@ module.exports = {
       extends:  'plugin:vue/recommended'
     },
   ],
+  plugins:[
+    'html'
+  ],
   rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/prefer-optional-chain': 'off',
         'vue/multi-word-component-names': 0
-      }
+      },
+  
 };
 

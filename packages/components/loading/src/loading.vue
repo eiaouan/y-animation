@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div
     class="y_loading"
@@ -8,8 +9,6 @@
 <script lang="ts">
 
 import { defineComponent,computed} from 'vue';
-import { LoadingProps } from './types';
-
 export default defineComponent({
   props: {
     type: {
@@ -32,29 +31,3 @@ export default defineComponent({
 }) 
 
 </script>
-
-<style lang="scss">
-.y_loading{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 5px;
-    &--primary {
-    width: 1em;
-    height: 1em;
-    border: 2px solid currentColor ;
-    border-top-color: transparent;
-    border-radius: 100%;
-    animation: circle infinite 0.75s linear;
-    }
-}
-
-@keyframes circle {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-</style>
