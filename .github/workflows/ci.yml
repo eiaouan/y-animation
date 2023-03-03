@@ -5,7 +5,6 @@ on:
 jobs:
   cache-install-and-lint:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
