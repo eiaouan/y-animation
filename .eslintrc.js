@@ -85,6 +85,9 @@ module.exports = {
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/prefer-optional-chain': 'off',
         'vue/multi-word-component-names': 0
-      }
+      },
+  plugin:[
+    'html'
+  ]
 };
 
