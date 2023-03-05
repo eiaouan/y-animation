@@ -8,10 +8,13 @@ export const componentSidebar =[
     collapsable: true,
     children: [{
       text: 'Button 按钮',
-      link: '/components/pages/Button',
+      link: '/components/pages/button',
     },{
       text: 'input 输入',
       link: '/components/pages/input',
+    },{
+      text: 'icon 图标',
+      link: '/components/pages/icon',
     }]
   }, {
     text: '数据录入',

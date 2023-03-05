@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import path from 'path'
 import image from "@rollup/plugin-image"
 import scss from 'rollup-plugin-scss'
+
 export default defineConfig({
   build: {
     rollupOptions: {
@@ -13,7 +14,8 @@ export default defineConfig({
           image(),
           scss({
             fileName: 'bundle.css'
-          })
+          }),
+          
       ]
     }
   }

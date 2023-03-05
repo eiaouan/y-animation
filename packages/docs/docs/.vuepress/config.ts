@@ -4,8 +4,8 @@ import { defineUserConfig,defaultTheme } from 'vuepress'
 import {componentSidebar} from '../components'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import mdIt from 'markdown-it'
-
 import { getDirname, path } from '@vuepress/utils'
+
 const __dirname = getDirname(import.meta.url)
 
 
@@ -45,12 +45,12 @@ export default {
   }),
   plugins:[
     registerComponentsPlugin({
-      components: {
-        basicInput : path.resolve(__dirname,'./components/input/basicInput.vue')
-      },
-      componentsDir: path.resolve(__dirname, './components/input'),
-    })
-    
+      // components: {
+      //   basicInput : path.resolve(__dirname,'./components/input/basicInput.vue')
+      // },
+      componentsDir: path.resolve(__dirname, './components'),
+    }),
+
   ],
   extendMarkdown: md => {
     md.set({ breaks: true })

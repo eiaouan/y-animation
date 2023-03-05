@@ -1,5 +1,20 @@
+
+$y-input--promary : #78b1fa;
+$y-input-placeholder-color: #ccc;
+$y-input-font-size : 16px;
 .y_input {
     outline: none;
-    border: 1px solid #aaa;
-    border-radius: 30%;
+    border: 2px solid #ccc;
+    border-radius: 0;
+    height: 2em;
+    padding-left: 0.5em;
+    border-radius: 5px;
+    font-size: $y-input-font-size;
+    &:focus {
+        border-color: $y-input--promary;
+    }
+    &::placeholder{
+        font-size: 1em;
+        color: $y-input-placeholder-color;
+    }
 }

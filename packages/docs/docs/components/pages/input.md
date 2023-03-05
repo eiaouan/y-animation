@@ -1,9 +1,6 @@
 ### input 输入框
 
 #### 基础使用
-<basic-input></basic-input>
+<input-basic></input-basic>
 
-
-
-<script lang='ts' setup>
-</script>
+@[code vue](../../.vuepress/components/input/basic.vue)

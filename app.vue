@@ -1,16 +1,19 @@
 /* app.vue */
 <template>
-  <yButton
-    :loading="loading"
-    @click="handleClick"
-  >
-    确定
-  </yButton>
+  <div>
+    <yButton
+      :loading="loading"
+      @click="handleClick"
+    >
+      确定
+    </yButton>
+    <YIcon />
+  </div>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { yButton } from '@y-animation/components'
+import { yButton,YIcon } from '@y-animation/components'
 const loading = ref(false)
 const handleClick = () => {
   loading.value = !loading.value

@@ -6,6 +6,10 @@ export const yInputProps = {
     validator (value: string) {
       return yInputType.includes(value)
     }
+  },
+  placeholder: {
+    type: String,
+    default: 'plase input'
   }
 }
 

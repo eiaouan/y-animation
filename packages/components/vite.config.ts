@@ -21,7 +21,7 @@ export default defineConfig({
           commonjs(),
           image(),
           nodeResolve(),
-          postcss()
+          postcss(),
       ]
     }
   }

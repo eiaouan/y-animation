@@ -5,7 +5,7 @@ import clientConfig3 from 'D:/project/y-animation/y-animation/node_modules/.pnpm
 import clientConfig4 from 'D:/project/y-animation/y-animation/node_modules/.pnpm/registry.npmmirror.com+@vuepress+plugin-nprogress@2.0.0-beta.60/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
 import clientConfig5 from 'D:/project/y-animation/y-animation/node_modules/.pnpm/registry.npmmirror.com+@vuepress+plugin-theme-data@2.0.0-beta.60/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import clientConfig6 from 'D:/project/y-animation/y-animation/node_modules/.pnpm/registry.npmmirror.com+@vuepress+theme-default@2.0.0-beta.60/node_modules/@vuepress/theme-default/lib/client/config.js'
-import clientConfig7 from 'D:/project/y-animation/y-animation/packages/docs/docs/.vuepress/.temp/register-components/clientConfig.5c5cd652.js'
+import clientConfig7 from 'D:/project/y-animation/y-animation/packages/docs/docs/.vuepress/.temp/register-components/clientConfig.18ec24f2.js'
 import clientConfig8 from 'D:/project/y-animation/y-animation/packages/docs/docs/.vuepress/client.ts'
 
 export const clientConfigs = [

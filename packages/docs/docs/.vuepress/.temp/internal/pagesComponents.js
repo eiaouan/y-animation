@@ -7,6 +7,8 @@ export const pagesComponents = {
   "v-c21b677a": defineAsyncComponent(() => import(/* webpackChunkName: "v-c21b677a" */"D:/project/y-animation/y-animation/packages/docs/docs/.vuepress/.temp/pages/components/components.html.vue")),
   // path: /components/pages/button.html
   "v-3fe96fdc": defineAsyncComponent(() => import(/* webpackChunkName: "v-3fe96fdc" */"D:/project/y-animation/y-animation/packages/docs/docs/.vuepress/.temp/pages/components/pages/button.html.vue")),
+  // path: /components/pages/icon.html
+  "v-2fc26f96": defineAsyncComponent(() => import(/* webpackChunkName: "v-2fc26f96" */"D:/project/y-animation/y-animation/packages/docs/docs/.vuepress/.temp/pages/components/pages/icon.html.vue")),
   // path: /components/pages/input.html
   "v-6dd7448c": defineAsyncComponent(() => import(/* webpackChunkName: "v-6dd7448c" */"D:/project/y-animation/y-animation/packages/docs/docs/.vuepress/.temp/pages/components/pages/input.html.vue")),
   // path: /404.html

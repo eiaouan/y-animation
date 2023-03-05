@@ -1,6 +1,7 @@
 <template>
   <input
     :type="type"
+    :placeholder="placeholder"
     class="y_input"
   >
 </template>
@@ -13,9 +14,10 @@ export default {
   props: yInputProps,
   setup (props, context) {
     // eslint-disable-next-line vue/no-setup-props-destructure
-    const { type = 'text' } = props
+    const { type = 'text',placeholder } = props
     return {
-      type
+      type,
+      placeholder
     }
   }
 }
