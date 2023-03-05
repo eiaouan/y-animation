@@ -1,1 +1,0 @@
-import{y as t,Y as a}from"./app-176bdc7f.js";import{c as o,p as c,q as n,Q as r,N as e,z as s,R as p,_}from"./framework-f98f4da1.js";const m={class:""},i=p("p",null,"pppp",-1),u=o({__name:"basic",setup(d){return(f,l)=>(c(),n("div",m,[i,r(" <menuTest></menuTest> "),e(s(t),{type:"primary"}),e(s(a))]))}}),N=_(u,[["__file","basic.vue"]]);export{N as default};

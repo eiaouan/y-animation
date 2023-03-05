@@ -38,10 +38,3 @@ export default {
 }
 
 </script>
-
-<style>
-.y_icon {
-  /* color: red; */
-  overflow: hidden;
-}
-</style>

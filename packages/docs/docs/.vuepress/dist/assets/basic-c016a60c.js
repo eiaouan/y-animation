@@ -1,1 +1,0 @@
-import{a as e}from"./app-176bdc7f.js";import{c as s,p as r,q as n,N as t,z as a,O as o,_ as c}from"./framework-f98f4da1.js";const p=s({__name:"basic",setup(_){return(m,u)=>(r(),n(o,null,[t(a(e),{type:"text"}),t(a(e),{type:"number"}),t(a(e),{type:"password"})],64))}}),l=c(p,[["__file","basic.vue"]]);export{l as default};
