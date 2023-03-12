@@ -12,7 +12,10 @@
     &--success {
         background-color: $color-success;
     }
-    &--danger{
+    &--warning{
+        background-color: $color-warning;
+    }
+    &--danger {
         background-color: $color-danger;
     }
     &--text {
@@ -32,5 +35,8 @@
     }
     &--loading{
         opacity: 0.5;
+    }
+    &--disabled {
+        opacity: 0.3;
     }
 }

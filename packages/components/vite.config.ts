@@ -25,6 +25,15 @@ export default defineConfig({
           postcss(),
           scss()
       ]
+    },
+    
+  },
+  css: {
+    /* CSS 预处理器 */
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "src/assets/styles/var.scss";'
+      }
     }
-  }
+  },
 })

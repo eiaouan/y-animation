@@ -10,7 +10,13 @@ export const yInputProps = {
   placeholder: {
     type: String,
     default: 'plase input'
-  }
+  },
+  suffix: {
+    type: Boolean,
+    default: false
+  },
+  modelValue:{} ,
+
 }
 
 export type YInputProps = ExtractPropTypes<typeof yInputProps>

@@ -45,12 +45,8 @@ export default {
   }),
   plugins:[
     registerComponentsPlugin({
-      // components: {
-      //   basicInput : path.resolve(__dirname,'./components/input/basicInput.vue')
-      // },
       componentsDir: path.resolve(__dirname, './components'),
-    }),
-
+    })
   ],
   extendMarkdown: md => {
     md.set({ breaks: true })

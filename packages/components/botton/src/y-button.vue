@@ -3,6 +3,7 @@
     v-loading="p.loading"
     :ButtonType="p.type"
     :ButtonSize="p.size"
+    :disabled="p.disabled"
     class="y_button"
     :class="classList"
   >
@@ -20,16 +21,17 @@ export default defineComponent({
   props: buttonProps,
   setup (props, context) {
     const p = computed(() => {
-      const { size = 'meduim', type = 'text', loading = false } = props
-      return { size, type, loading }
+      const { size = 'meduim', type = 'text', loading = false ,disabled=false} = props
+      return { size, type, loading,disabled }
     })
     const classList = computed(() => {
-      const { size = 'meduim', type = 'text', loading = false } = props
+      const { size = 'meduim', type = 'text', loading = false,disabled=false } = props
       return [
         {
           [`y_button--${type}`]: type,
           [`y_button--${size}`]: size,
-          'y_button--loading': loading
+          'y_button--loading': loading,
+          'y_button--disabled':disabled
         }
       ]
     })

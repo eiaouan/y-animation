@@ -18,6 +18,10 @@ export const buttonProps = {
   loading: {
     type: Boolean,
     default: false
+  },
+  disabled: {
+    type: Boolean,
+    default: false
   }
 }
 export type ButtonProps = ExtractPropTypes<typeof buttonProps>

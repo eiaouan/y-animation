@@ -13,7 +13,7 @@
  import  svgComponents from '../../assets/icons'
 export default {
   components: {
-    ...svgComponents
+    ...svgComponents 
   },
   props: {
     iconName: {
@@ -26,12 +26,12 @@ export default {
       default: '#999'
     },
     width: {
-      type: Number,
-      default: 50
+      type: String,
+      default: '50'
     },
     height: {
-      type: Number,
-      default: 50
+      type: String,
+      default: '50'
     }
   },
 

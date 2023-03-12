@@ -1,3 +1,4 @@
+import { App } from 'vue'
 import { yButton } from './botton'
 import { yLoading } from './loading'
 import {yInput} from './input'
@@ -10,10 +11,21 @@ export {
     yInput,
     YIcon
 }
-
-export default {
+const components =  [
     yButton,
     yLoading,
     yInput,
     YIcon
+]
+
+
+// 全局注册
+
+const install = (app:App<Element>)=>{
+    components.forEach((item)=>{
+        app.use(item)
+    })
 }
+
+export default install
+

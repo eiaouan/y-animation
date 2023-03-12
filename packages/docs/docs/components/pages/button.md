@@ -1,9 +1,9 @@
 ### button 按钮
 
 
+#### 基础使用
+<button-basic></button-basic>
 
-demo Use `type`, `plain`, `round` and `circle` to define Button's style.
 
-<y-button type="text">确定</y-button>
-
+@[code vue](../../.vuepress/components/button/basic.vue)
 

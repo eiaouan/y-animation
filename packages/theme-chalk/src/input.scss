@@ -1,17 +1,35 @@
 
-$y-input--promary : #78b1fa;
+$y-input--primary : #78b1fa;
 $y-input-placeholder-color: #ccc;
 $y-input-font-size : 16px;
+$y_input_suffix-color : #fff;
 .y_input {
-    outline: none;
+    display: inline-block;
+    font-size: $y-input-font-size;
     border: 2px solid #ccc;
-    border-radius: 0;
-    height: 2em;
-    padding-left: 0.5em;
     border-radius: 5px;
+    height: 2em;
+    line-height: 2em;
+    padding-left: 0.5em;
+    &_suffix {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        padding: 0 5px;
+        vertical-align: top;
+        color: $y_input_suffix-color;
+        background-color: $y-input--primary;
+        cursor: pointer;
+    }
+}
+
+.y_input_plain {
+    outline: none;
+    border: none;
     font-size: $y-input-font-size;
     &:focus {
-        border-color: $y-input--promary;
+        border-color: $y-input--primary;
     }
     &::placeholder{
         font-size: 1em;

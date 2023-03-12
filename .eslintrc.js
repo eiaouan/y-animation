@@ -67,7 +67,8 @@ module.exports = {
     },
     {
       files: ['*.vue'],
-      parser: 'vue-eslint-parser',
+      // parser: 'vue-eslint-parser',
+      parse: 'eslint-plugin-vue',
       parserOptions: {
         parser: '@babel/eslint-parser',
         babelOptions: {
