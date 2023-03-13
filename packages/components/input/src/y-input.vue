@@ -5,7 +5,7 @@
       :placeholder="placeholder"
       class="y_input_plain"
       :value="modelValue"
-    @input="handleInput"
+      @input="handleInput"
     >
     <!-- 这里是input 元素可能会有value 报错解决，类型断言 -->
     <!-- 后缀 -->
@@ -25,12 +25,14 @@
 import { yInputProps }  from './types'
 export default {
   props: yInputProps,
+  emits: ['update:modelValue','clickSuffix'],
   setup (props, context) {
     const handleInput = (evt:Event)=>{
       let target = evt.target as HTMLInputElement
       context.emit('update:modelValue',target.value)
     }
 
+    // eslint-disable-next-line vue/no-setup-props-destructure
     const { type = 'text',placeholder,suffix } = props
 
     return {

@@ -1,4 +1,6 @@
+// eslint-diable-next-line
 import { type ExtractPropTypes } from 'vue'
+
 const yInputType = ['text','number','password']
 export const yInputProps = {
   type: {
