@@ -1,0 +1,1 @@
+import{_ as s,p as t,q as r,Q as e,t as a}from"./framework-3ea9ff79.js";const c={},n=e("h1",{id:"vue-press",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vue-press","aria-hidden":"true"},"#"),a(" vue Press")],-1),o=[n];function _(d,i){return t(),r("div",null,o)}const l=s(c,[["render",_],["__file","index.html.vue"]]);export{l as default};
