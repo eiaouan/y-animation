@@ -1,0 +1,1 @@
+import{_ as o,M as n,p as a,q as t,N as s,Q as e,t as r}from"./framework-3ea9ff79.js";const i={},_=e("h2",{id:"icon-图标",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#icon-图标","aria-hidden":"true"},"#"),r(" icon 图标")],-1);function d(l,h){const c=n("icon-basic");return a(),t("div",null,[_,s(c)])}const m=o(i,[["render",d],["__file","icon.html.vue"]]);export{m as default};
